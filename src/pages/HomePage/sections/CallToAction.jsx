@@ -1,4 +1,4 @@
-import heroImage from "../../../assets/images/hero.jpg";
+import heroImage from "../../../assets/images/hero.webp";
 const CallToAction = () => {
   return (
     <section data-aos="fade-up" id="cta-section" className="p-6 md:px-24 xl:px-[92px] 2xl:px-[128px]">

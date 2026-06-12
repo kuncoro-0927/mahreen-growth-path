@@ -1,7 +1,10 @@
-import about from "../assets/images/about.png";
+import about from "../assets/images/about.webp";
 const AboutCard = () => {
   return (
-    <div data-aos="fade-up" className="flex flex-col rounded-3xl bg-white p-5 shadow-sm xl:max-w-[55%]">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col rounded-3xl bg-white p-5 shadow-sm xl:max-w-[55%]"
+    >
       {/* Header */}
       <div className="flex flex-col items-start  gap-3">
         <div className="flex items-center gap-2">
@@ -18,11 +21,17 @@ const AboutCard = () => {
           </div>
 
           <div className="flex gap-2">
-            <button className="flex h-10 w-10 items-center justify-center rounded-full bg-blue text-white shadow cursor-pointer hover:bg-blue-500 duration-300">
+            <button
+              aria-label="Kirim Email"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-blue text-white shadow cursor-pointer hover:bg-blue-500 duration-300"
+            >
               <i className="bi bi-envelope"></i>
             </button>
 
-            <button className="flex h-10 w-10 items-center justify-center rounded-full bg-blue text-white shadow cursor-pointer hover:bg-blue-500 duration-300">
+            <button
+              aria-label="Salin Tautan"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-blue text-white shadow cursor-pointer hover:bg-blue-500 duration-300"
+            >
               <i className="bi bi-link-45deg text-xl"></i>
             </button>
           </div>
@@ -81,7 +90,9 @@ const AboutCard = () => {
                 Analisis
               </h3>
 
-              <button className="text-sm text-gray-500 cursor-pointer hover:text-primary duration-300">All time ▼</button>
+              <button className="text-sm text-gray-500 cursor-pointer hover:text-primary duration-300">
+                All time ▼
+              </button>
             </div>
 
             {/* Gauge */}
@@ -113,7 +124,9 @@ const AboutCard = () => {
           {/* Content */}
           <div className="relative z-10  h-full">
             <div className="mb-6 flex items-center gap-2 rounded-2xl w-fit border border-white/10 bg-white/40 backdrop-blur-xl px-4 shadow-sm py-2">
-              <span className="text-sm xl:text-base font-normal">Mahreen Indonesia</span>
+              <span className="text-sm xl:text-base font-normal">
+                Mahreen Indonesia
+              </span>
             </div>
 
             <h1 className="max-w-[150px] xl:max-w-[220px] text-2xl xl:text-3xl font-semibold leading-tight">

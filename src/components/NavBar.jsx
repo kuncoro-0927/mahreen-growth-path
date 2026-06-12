@@ -84,6 +84,7 @@ const NavBar = () => {
                       to={item.target}
                       spy={true}
                       smooth={true}
+                      href={item.target}
                       offset={-100}
                       duration={500}
                       className="block px-5 py-2 w-full h-full"
@@ -99,6 +100,7 @@ const NavBar = () => {
             {/* Desktop Button */}
             <ScrollLink
               to="cta-section"
+              href="cta-section"
               spy={true}
               smooth={true}
               offset={-100}
@@ -177,6 +179,7 @@ const NavBar = () => {
                       spy={true}
                       smooth={true}
                       offset={-100}
+                      href={item.target}
                       duration={500}
                       onClick={() => setIsOpen(false)}
                       className="block px-5 py-3 w-full h-full"
@@ -193,6 +196,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
+                href="cta-section"
                 onSetActive={() => setActiveSection("cta-section")}
                 onClick={() => setIsOpen(false)}
                 className={`group mt-4 w-full flex items-center justify-center gap-2 rounded-2xl py-3 transition-all duration-300 cursor-pointer ${

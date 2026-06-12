@@ -1,4 +1,4 @@
-import hero from "../../../assets/images/hero.jpg";
+import hero from "../../../assets/images/hero.webp";
 import StatCard from "../../../components/CardStat";
 const Stats = () => {
   return (

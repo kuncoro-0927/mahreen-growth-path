@@ -11,8 +11,11 @@ const Hero = () => {
       <div className="absolute left-1/2 top-0 w-[200px] h-[100px] xl:w-[500px] xl:h-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/80 blur-[120px]" />
       <div className="absolute bottom-0 left-0 right-0 h-[200px] bg-gradient-to-b from-transparent to-white" />
 
-      <div data-aos="fade-down" className="relative z-10 flex flex-col gap-y-4 items-center justify-center text-center">
-        <h1  className="text-2xl xl:text-6xl sm:max-w-sm xl:max-w-4xl font-normal leading-tight">
+      <div
+        data-aos="fade-down"
+        className="relative z-10 flex flex-col gap-y-4 items-center justify-center text-center"
+      >
+        <h1 className="text-2xl xl:text-6xl sm:max-w-sm xl:max-w-4xl font-normal leading-tight">
           Berkembang Hebat Bersama Mahreen Growth Path
         </h1>
         <span className="text-sm xl:text-base max-w-lg">
@@ -22,6 +25,7 @@ const Hero = () => {
 
         <ScrollLink
           to="cta-section"
+          href="cta-section"
           spy={true}
           smooth={true}
           offset={-100}
