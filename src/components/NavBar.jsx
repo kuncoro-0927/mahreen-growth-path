@@ -204,7 +204,7 @@ const NavBar = () => {
                 <span>Kontak</span>
 
                 <span
-                  className={`flex items-center justify-center rounded-full p-2 transition-all duration-300 ${
+                  className={`flex items-center justify-center rounded-full transition-all duration-300 ${
                     activeSection === "cta-section"
                       ? "text-white"
                       : "text-black group-hover:bg-black group-hover:text-white"
