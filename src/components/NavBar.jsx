@@ -77,7 +77,7 @@ const NavBar = () => {
                     className={`font-normal rounded-3xl transition-all duration-300 cursor-pointer ${
                       activeSection === item.target
                         ? "bg-black text-white"
-                        : "hover:bg-light text-gray"
+                        : "hover:bg-light text-primary"
                     }`}
                   >
                     <ScrollLink
@@ -128,6 +128,7 @@ const NavBar = () => {
 
             {/* Mobile Button */}
             <button
+              aria-label="Menu Button"
               onClick={() => setIsOpen(!isOpen)}
               className={`lg:hidden relative flex items-center justify-center rounded-full py-2 px-3 border backdrop-blur-xs ${
                 isScrolled

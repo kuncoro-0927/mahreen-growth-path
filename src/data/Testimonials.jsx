@@ -8,7 +8,7 @@ export const testimonials = [
     name: "Aris Wicaksono",
     role: "Managing Partner at Alpha Ventures",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=60",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const testimonials = [
     name: "Rian Sanjaya",
     role: "Mahasiswa Teknik Informatika",
     avatar:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=60",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const testimonials = [
     name: "Kevin Pamungkas",
     role: "Fresh Graduate & Frontend Developer",
     avatar:
-      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200",
+      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=60",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const testimonials = [
     name: "Hadi Syahputra",
     role: "Pemilik Keripik Singkong Nusantara (UMKM)",
     avatar:
-      "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=200",
+      "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=60",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const testimonials = [
     name: "Dimas Nugraha",
     role: "Mahasiswa Sistem Informasi",
     avatar:
-      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=200",
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=60",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const testimonials = [
     name: "Fajar Ramadhan",
     role: "Fresh Graduate & Fullstack Developer",
     avatar:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=200",
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=60",
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ export const testimonials = [
     name: "Cahya Budianto",
     role: "Investment Director at Nusantara Capital",
     avatar:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200",
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=60",
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ export const testimonials = [
     name: "Dewi Lestari",
     role: "Founder Batik Mukti (UMKM)",
     avatar:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=60",
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ export const testimonials = [
     name: "Bagus Setiawan",
     role: "Fresh Graduate & Mobile Developer",
     avatar:
-      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200",
+      "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=60",
   },
   {
     id: 10,
@@ -90,6 +90,6 @@ export const testimonials = [
     name: "Andi Wijaya",
     role: "Mahasiswa Ilmu Komputer",
     avatar:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=200",
+      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=60",
   },
 ];

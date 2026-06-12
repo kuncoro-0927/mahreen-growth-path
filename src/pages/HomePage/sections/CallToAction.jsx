@@ -9,7 +9,7 @@ const CallToAction = () => {
             Mulai Langkahmu
           </span>
 
-          <h2 className="text-2xl xl:text-5xl font-semibold leading-tight text-slate-900 mb-4">
+          <h2 className="text-2xl xl:text-5xl font-normal leading-tight text-primary mb-4">
             Siap Bangun Inovasi
             <br />
             Digital <span className="text-blue-500">Nyata?</span>

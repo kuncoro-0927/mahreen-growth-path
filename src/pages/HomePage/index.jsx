@@ -1,18 +1,36 @@
 import Hero from "./sections/Hero";
-import AboutUs from "./sections/AboutUs";
-import Stats from "./sections/Stats";
-import Programs from "./sections/Programs";
-import Testimonials from "./sections/Testimonials";
-import CallToAction from "./sections/CallToAction";
+import { lazy, Suspense } from "react";
+
+const Stats = lazy(() => import("./sections/Stats"));
+const AboutUs = lazy(() => import("./sections/AboutUs"));
+const Programs = lazy(() => import("./sections/Programs"));
+const Testimonials = lazy(() => import("./sections/Testimonials"));
+const CallToAction = lazy(() => import("./sections/CallToAction"));
+
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <Stats />
-      <AboutUs />
-      <Programs />
-      <Testimonials />
-      <CallToAction />
+
+      <Suspense fallback={null}>
+        <Stats />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <AboutUs />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <Programs />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <Testimonials />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <CallToAction />
+      </Suspense>
     </>
   );
 };

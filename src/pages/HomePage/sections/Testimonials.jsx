@@ -14,7 +14,7 @@ const Testimonials = () => {
         data-aos="fade-up"
         className="flex flex-col items-center justify-center text-center mb-12 xl:mb-24 relative z-20"
       >
-        <h2 className="text-2xl xl:text-5xl font-semibold">
+        <h2 className="text-2xl xl:text-5xl font-normal">
           Cerita Dampak Nyata Mahreen
         </h2>
         <p className="text-sm xl:text-lg text-gray max-w-2xl mt-2">
