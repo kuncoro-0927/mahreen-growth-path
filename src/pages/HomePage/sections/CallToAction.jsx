@@ -1,7 +1,7 @@
 import heroImage from "../../../assets/images/hero.jpg";
 const CallToAction = () => {
   return (
-    <section id="cta-section" className="p-6 md:px-12 xl:px-[92px] 2xl:px-[128px]">
+    <section data-aos="fade-up" id="cta-section" className="p-6 md:px-24 xl:px-[92px] 2xl:px-[128px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-6 xl:p-12 bg-gradient-to-br from-slate-50 to-blue-100 rounded-3xl">
         {/* left content */}
         <div>
@@ -19,7 +19,7 @@ const CallToAction = () => {
             Bergabunglah bersama ribuan talenta muda Indonesia di ekosistem
             Mahreen. Kembangkan keahlianmu dan ciptakan solusi digital hari ini.
           </p>
-          <button className="text-sm xl:text-base  bg-blue text-white rounded-full px-6 py-3 flex items-center gap-2 hover:bg-slate-800">
+          <button className="text-sm xl:text-base  bg-blue text-white rounded-full px-6 py-3 flex items-center gap-2 hover:bg-blue-500 hover:-translate-y-1 hover:shadow-sm duration-300 cursor-pointer">
             Gabung Sekarang
             <i className="ti ti-arrow-up-right" />
           </button>

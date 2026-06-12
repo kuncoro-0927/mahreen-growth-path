@@ -1,7 +1,7 @@
 
 const ProgramCard = ({ illustration, title, description }) => {
   return (
-    <div className="bg-white/40 backdrop-blur-md border border-gray/20 rounded-2xl p-8">
+    <div className="bg-white/40 backdrop-blur-md border border-gray/20 rounded-2xl p-8 hover:-translate-y-1 hover:shadow-lg duration-300 cursor-pointer">
       <div className="rounded-xl relative overflow-hidden">
         {illustration}
       </div>

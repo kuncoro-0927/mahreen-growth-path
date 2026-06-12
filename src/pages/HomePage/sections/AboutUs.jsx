@@ -1,11 +1,14 @@
-import AboutCard from "../components/AboutCard";
+import AboutCard from "../../../components/AboutCard";
 const AboutUs = () => {
   return (
-    <section id="about-section" className="flex flex-col-reverse xl:flex-row items-center justify-between gap-12 px-6 md:px-12 xl:px-[92px] 2xl:px-[128px] items-stretch">
+    <section
+      id="about-section"
+      className="flex flex-col-reverse xl:flex-row items-center justify-between gap-12 px-6 md:px-24 xl:px-[92px] 2xl:px-[128px] items-stretch"
+    >
       <AboutCard />
 
-      <div className="flex flex-col gap-y-4">
-        <div className="flex items-center justify-center">
+      <div data-aos="fade-up" className="flex flex-col gap-y-4">
+        <div className="flex items-center justify-center lg:justify-start">
           <span className=" px-4 text-sm py-2 rounded-full border w-fit border-light">
             Tentang Mahreen Growth Path
           </span>
@@ -15,10 +18,9 @@ const AboutUs = () => {
           Berkarya Bersama Mahreen Growth Path
         </h2>
         <p className="text-sm xl:text-base text-center xl:text-left">
-          Mahreen Indonesia adalah ekosistem inovasi tempat generasi muda
-          berkolaborasi. Kami memadukan kreativitas dan teknologi modern untuk
-          melahirkan karya digital yang berdampak luas, dari tingkat nasional
-          hingga internasional.
+          Mahreen Growth Path adalah program pengembangan terstruktur untuk
+          mempersiapkan talenta muda siap kerja dan siap berkarya di industri
+          digital.
         </p>
 
         <div className="flex items-center items-stretch gap-4 mt-5 xl:mt-0 text-sm xl:text-base">

@@ -1,11 +1,11 @@
 import { socialProofAvatars } from "../../data/SocialProof";
 
-const CustomerSuccessIllustration = () => {
+const ProgramFour = () => {
   const reactions = ["😍", "👍", "⭐", "🎉"];
 
   return (
     <div className="rounded-xl h-56 relative overflow-hidden bg-slate-50 flex items-center justify-center">
-      {/* spreadsheet card */}
+    
       <div
         className="bg-white/40 w-64 p-3 backdrop-blur-lg border-t border-l border-r border-slate-200 rounded-xl relative overflow-hidden"
         style={{
@@ -15,14 +15,13 @@ const CustomerSuccessIllustration = () => {
             "linear-gradient(to bottom, black 60%, transparent 100%)",
         }}
       >
-        {/* status icons row */}
+    
         <div className="flex items-center gap-1 mb-4">
           <div className="w-2 h-2 rounded-full bg-red-500"></div>
           <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
           <div className="w-2 h-2 rounded-full bg-green-500"></div>
         </div>
 
-        {/* rows */}
         {[60, 40, 70, 30, 50].map((width, i) => (
           <div key={i} className="flex gap-1 mb-1.5">
             <div
@@ -68,4 +67,4 @@ const CustomerSuccessIllustration = () => {
   );
 };
 
-export default CustomerSuccessIllustration;
+export default ProgramFour;

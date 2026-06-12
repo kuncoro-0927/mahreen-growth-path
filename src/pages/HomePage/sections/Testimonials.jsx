@@ -8,9 +8,12 @@ const Testimonials = () => {
   return (
     <section
       id="testimonial-section"
-      className="relative px-6 md:px-12 xl:px-[92px] 2xl:px-[128px] overflow-hidden"
+      className="relative px-6 md:px-24 xl:px-[92px] 2xl:px-[128px] overflow-hidden"
     >
-      <div className="flex flex-col items-center justify-center text-center mb-12 xl:mb-24 relative z-20">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col items-center justify-center text-center mb-12 xl:mb-24 relative z-20"
+      >
         <h2 className="text-2xl xl:text-5xl font-semibold">
           Cerita Dampak Nyata Mahreen
         </h2>
@@ -20,7 +23,7 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <div>
+      <div data-aos="fade-up">
         <div className="grid grid-cols-1  lg:grid-cols-3 gap-5">
           {testimonials.map((item, index) => {
             const isFeatured = index === 0 || index === 6;

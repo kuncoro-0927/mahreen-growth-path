@@ -32,9 +32,8 @@ const NavBar = () => {
     <>
       <nav
         ref={navbarRef}
-        className="fixed p-6 lg:px-16 2xl:px-28 top-0 left-0 right-0 lg:top-0 lg:left-0 lg:right-0 z-50"
+        className="fixed p-6 md:px-24 lg:px-16 2xl:px-28 top-0 left-0 right-0 lg:top-0 lg:left-0 lg:right-0 z-50"
       >
-        {/* TOP BAR */}
         <div
           className={`transition-all duration-300 bg-amber-200 ${
             isScrolled || isOpen ? "bg-transparent" : "bg-transparent"
@@ -45,7 +44,6 @@ const NavBar = () => {
               isScrolled ? "text-neutral-900" : "text-black"
             }`}
           >
-            {/* Logo */}
             <div
               className={`flex items-center gap-3 px-4 py-1 rounded-4xl border transition-colors duration-300 overflow-hidden backdrop-blur-xs ${
                 isScrolled
@@ -56,7 +54,7 @@ const NavBar = () => {
               <img
                 src={logo_dark}
                 className="w-8 lg:w-[32px] py-1.5 transition-all duration-300"
-                alt="Logo"
+                alt="Logo Mahreen Growth Path"
               />
 
               <span className="text-sm sm:text-xs font-medium leading-none">
@@ -161,26 +159,60 @@ const NavBar = () => {
         >
           <div className="min-h-0 transition-all duration-300">
             <div
-              className={`rounded-3xl border border-white/10 bg-black/40 backdrop-blur-xl p-4 mx-4 mt-3
+              className={`rounded-3xl border border-white/10 bg-black/40 backdrop-blur-xl p-4 mt-3
       transition-all duration-300 ${isOpen ? "opacity-100" : "opacity-0"}`}
             >
               <ul className="flex flex-col gap-2 text-white">
                 {navItems.map((item, index) => (
                   <li
                     key={index}
-                    className={`rounded-2xl px-4 py-3 transition-all duration-300 ${
-                      index === 0 ? "bg-white text-black" : "hover:bg-white/10"
+                    className={`font-normal rounded-xl transition-all duration-300 cursor-pointer ${
+                      activeSection === item.target
+                        ? "bg-black text-white"
+                        : "hover:bg-light text-white"
                     }`}
                   >
-                    {item.name}
+                    <ScrollLink
+                      to={item.target}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                      onClick={() => setIsOpen(false)}
+                      className="block px-5 py-3 w-full h-full"
+                      onSetActive={() => setActiveSection(item.target)}
+                    >
+                      {item.name}
+                    </ScrollLink>
                   </li>
                 ))}
               </ul>
+              <ScrollLink
+                to="cta-section"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onSetActive={() => setActiveSection("cta-section")}
+                onClick={() => setIsOpen(false)}
+                className={`group mt-4 w-full flex items-center justify-center gap-2 rounded-2xl py-3 transition-all duration-300 cursor-pointer ${
+                  activeSection === "cta-section"
+                    ? "bg-black text-white"
+                    : "bg-white text-black hover:bg-black hover:text-white"
+                }`}
+              >
+                <span>Kontak</span>
 
-              <button className="mt-4 w-full flex items-center justify-center gap-2 rounded-2xl bg-white text-black py-3">
-                Kontak
-                <ArrowUpRightIcon />
-              </button>
+                <span
+                  className={`flex items-center justify-center rounded-full p-2 transition-all duration-300 ${
+                    activeSection === "cta-section"
+                      ? "text-white"
+                      : "text-black group-hover:bg-black group-hover:text-white"
+                  }`}
+                >
+                  <ArrowUpRightIcon />
+                </span>
+              </ScrollLink>
             </div>
           </div>
         </div>

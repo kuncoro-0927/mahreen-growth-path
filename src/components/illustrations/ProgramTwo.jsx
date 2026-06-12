@@ -1,27 +1,22 @@
-// components/illustrations/TeamworkIllustration.jsx
-const TeamworkIllustration = () => {
+const ProgramTwo = () => {
   return (
     <div className="rounded-xl relative overflow-hidden bg-gradient-to-b from-blue-50 to-white p-4">
-      {/* add new task bar */}
+
       <div className="bg-white rounded-full shadow-md px-4 py-3 flex items-center justify-between relative">
         <span className="text-blue-500 font-medium flex items-center gap-2">
           <span className="text-sm xl:text-lg">+</span> Tambah Tugas Baru
         </span>
 
-        {/* cursor + label */}
-
         <div className="absolute right-1 top-12 xl:right-5 xl:top-8">
           <div className="relative inline-block">
             <div className="rounded-full bg-blue-600 px-4 py-2 text-xs text-white">
-              Song Kang
+              Kuncoro
             </div>
 
             <i className="bi bi-cursor-fill absolute -top-4 -left-3 text-blue-600 text-xl scale-x-[-1]"></i>
           </div>
         </div>
       </div>
-
-      {/* task card */}
       <div className="bg-gray/5 p-3 mt-6 rounded-4xl">
         <div className="border-2 border-white bg-gradient-to-r from-[#eef5ff] via-white to-white rounded-4xl shadow-lg p-4">
           <div className="flex items-center gap-3 text-xs text-slate-500 mb-2">
@@ -55,4 +50,4 @@ const TeamworkIllustration = () => {
   );
 };
 
-export default TeamworkIllustration;
+export default ProgramTwo;

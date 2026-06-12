@@ -1,5 +1,4 @@
-// components/illustrations/CodeIllustration.jsx
-const CodeIllustration = () => {
+const ProgramThree = () => {
   return (
     <div
       className="bg-white/40 backdrop-blur-lg border-t border-l border-r border-slate-200 rounded-xl p-4 relative overflow-hidden h-56"
@@ -32,4 +31,4 @@ const CodeIllustration = () => {
   );
 };
 
-export default CodeIllustration;
+export default ProgramThree;

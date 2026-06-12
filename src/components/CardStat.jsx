@@ -1,16 +1,13 @@
-import cardstat from "../../../assets/images/card_stat.svg";
-
+import cardstat from "../assets/images/card_stat.svg"
 const StatCard = ({ number, text }) => {
   return (
-    <div className="relative w-full">
-      {/* SVG Background */}
+    <div data-aos="fade-up" className="relative w-full hover:-translate-y-1 duration-300">
       <img
         src={cardstat}
-        alt=""
+        alt="Background statistik Mahreen Growth Path"
         className="w-[230px] xl:w-full h-auto select-none pointer-events-none"
       />
 
-      {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-between p-6 xl:p-8">
    
           <h2 className="text-5xl xl:text-6xl font-semibold text-gray-900">
