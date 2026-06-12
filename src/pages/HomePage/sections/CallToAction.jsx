@@ -34,10 +34,10 @@ const CallToAction = () => {
           />
 
           <div className="absolute top-6 left-6 bg-white rounded-xl shadow-lg p-4 w-56">
-            <p className="text-sm text-slate-500 mb-1">Total Enrollments</p>
+            <p className="text-sm text-slate-500 mb-1">Total Talenta</p>
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl font-semibold text-slate-900">
-                16,000+
+                12,000+
               </span>
               <span className="text-sm text-blue-500 flex items-center gap-0.5">
                 <i className="ti ti-arrow-up" /> 16.19%
